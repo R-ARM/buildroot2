@@ -13,6 +13,7 @@ SDL2_CPE_ID_VENDOR = libsdl
 SDL2_CPE_ID_PRODUCT = simple_directmedia_layer
 SDL2_INSTALL_STAGING = YES
 SDL2_CONFIG_SCRIPTS = sdl2-config
+SDL2_DEPENDENCIES = wayland
 
 SDL2_CONF_OPTS += \
 	--disable-rpath \
