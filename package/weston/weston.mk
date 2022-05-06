@@ -179,4 +179,8 @@ else
 WESTON_CONF_OPTS += -Ddemo-clients=false
 endif
 
+define WESTON_INSTALL_INIT_SYSV
+	$(INSTALL) -D -m 755 package/weston/S15weston $(TARGET_DIR)/etc/init.d/S15weston
+endef
+
 $(eval $(meson-package))
