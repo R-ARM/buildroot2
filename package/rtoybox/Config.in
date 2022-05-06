@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RTOYBOX
+	bool "Rtoybox"
+	help
+	  A set of programs to make ragnarok2 usable

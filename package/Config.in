@@ -2626,4 +2626,9 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
+menu "Ragnarok-specific packages"
+	source "package/rinputer2/Config.in"
+	source "package/rtoybox/Config.in"
+endmenu
+
 endmenu

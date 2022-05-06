@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RINPUTER2
+	bool "Rinputer2"
+	help
+	  Ragnarok input daemon
