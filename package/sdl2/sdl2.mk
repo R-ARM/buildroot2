@@ -13,14 +13,15 @@ SDL2_CPE_ID_VENDOR = libsdl
 SDL2_CPE_ID_PRODUCT = simple_directmedia_layer
 SDL2_INSTALL_STAGING = YES
 SDL2_CONFIG_SCRIPTS = sdl2-config
-SDL2_DEPENDENCIES = wayland
+SDL2_DEPENDENCIES = wayland wayland-protocols weston
 
 SDL2_CONF_OPTS += \
 	--disable-rpath \
 	--disable-arts \
 	--disable-esd \
 	--disable-dbus \
-	--disable-pulseaudio
+	--disable-pulseaudio \
+	--enable-wayland
 
 # We are using autotools build system for sdl2, so the sdl2-config.cmake
 # include path are not resolved like for sdl2-config script.
