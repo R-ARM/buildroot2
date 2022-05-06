@@ -18,7 +18,7 @@ WESTON_ARGS="--tty=1 --shell=kiosk-shell.so"
 start() {
 	printf "Starting Weston: "
 	start-stop-daemon -S -q -b -m -p $PIDFILE --exec $BIN -- $WESTON_ARGS
-	[ $? = 0 ] && sleep 3 && echo "OK" || echo "FAIL"
+	[ $? = 0 ] && echo "OK" || echo "FAIL"
 }
 
 stop() {
