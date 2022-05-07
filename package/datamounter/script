@@ -6,5 +6,10 @@ else
 	rsetup
 	mkdir /data
 	mount /dev/disk/by-partlabel/RDATA /data/ -o rw,noatime
+	mkdir -p /data/Roms/GBA /data/Roms/GB /data/Roms/NES /data/Roms/SNES /data/Roms/PSP /data/Roms/MegaDrive /data/Roms/MasterSystem
+	mkdir -p /data/Videos/
+	mkdir -p /data/Music/
+	mkdir -p /data/Saves/
+	mkdir -p /data/SaveStates/
 	rmenu
 fi
