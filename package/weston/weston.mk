@@ -179,8 +179,10 @@ else
 WESTON_CONF_OPTS += -Ddemo-clients=false
 endif
 
+# FIXME: hack?
 define WESTON_INSTALL_INIT_SYSV
 	$(INSTALL) -D -m 755 package/weston/S15weston $(TARGET_DIR)/etc/init.d/S15weston
+	$(INSTALL) -D -m 755 package/weston/weston.ini $(TARGET_DIR)/etc/weston.ini
 endef
 
 $(eval $(meson-package))
