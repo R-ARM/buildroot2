@@ -1,0 +1,4 @@
+config BR2_PACKAGE_DATAMOUNTER
+	bool "Datamounter"
+	help
+	  Ragnarok data partition mount script

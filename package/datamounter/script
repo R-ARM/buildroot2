@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ -e "/dev/disk/by-partlabel/RDATA" ]; then
+	mount /dev/disk/by-partlabel/RDATA /data/ -o rw,noatime
+	rmenu
+else
+	rsetup
+	mkdir /data
+	mount /dev/disk/by-partlabel/RDATA /data/ -o rw,noatime
+	rmenu
+fi

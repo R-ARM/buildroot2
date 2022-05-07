@@ -2629,6 +2629,7 @@ endmenu
 menu "Ragnarok-specific packages"
 	source "package/rinputer2/Config.in"
 	source "package/rtoybox/Config.in"
+	source "package/datamounter/Config.in"
 endmenu
 
 endmenu
