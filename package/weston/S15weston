@@ -13,7 +13,7 @@ PIDFILE=/var/run/weston.pid
 
 # start weston on 1st tty
 # with kiosk shell
-WESTON_ARGS="--tty=1 --shell=kiosk-shell.so"
+WESTON_ARGS="--seat=seat0 --tty=1 --continue-without-input --shell=kiosk-shell.so --config=/etc/weston.ini --debug --flight-rec-scopes=\"\""
 
 start() {
 	printf "Starting Weston: "
