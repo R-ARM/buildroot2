@@ -17,7 +17,7 @@ WESTON_ARGS="--seat=seat0 --tty=1 --continue-without-input --shell=kiosk-shell.s
 
 start() {
 	printf "Starting Weston: "
-	start-stop-daemon -S -q -b -m -p $PIDFILE --exec $BIN -- $WESTON_ARGS
+	start-stop-daemon -S -m -p $PIDFILE --exec $BIN -- $WESTON_ARGS >/var/log/weston.log 2>&1 &
 	[ $? = 0 ] && echo "OK" || echo "FAIL"
 }
 
